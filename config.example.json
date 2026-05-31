@@ -1,0 +1,14 @@
+{
+  "output_dir": "./output",
+  "work_dir": "./output/work",
+  "intermediate_dir": "./output/intermediate",
+  "delivery_formats": ["pdf", "epub"],
+  "log_path": "./output/report-log.md",
+  "log_insert_after_heading": "",
+  "log_insert_after_marker": "\n---\n\n",
+  "author": "",
+  "source": "web research",
+  "chrome_path": "",
+  "dyld_fallback_library_path": "",
+  "privacy_note": "author 是报告署名，请在首次配置时填写自定义昵称。本地路径、账号标识、私有日志标题等个人配置只放在 config.local.json 或环境变量里。"
+}
