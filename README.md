@@ -85,6 +85,10 @@ python3 -m pip install markdown weasyprint
 - 微信：`evadebot`
 - GitHub：https://github.com/Jiaranbb/report-helper
 
+## 开源授权
+
+本项目采用 [MIT License](LICENSE)。
+
 ---
 
 # report-helper
@@ -100,7 +104,7 @@ python3 -m pip install markdown weasyprint
 
 Report quality depends heavily on model capability. Codex GPT-5.5 is recommended for best results.
 
-AI-generated reports can still be wrong, including drawing incorrect conclusions from correct facts. Treat outputs as learning references, and use PR-style "peer review" between multiple AI agents to challenge assumptions, ask hard questions, and verify reasoning.
+AI-generated reports can still be wrong, including drawing incorrect conclusions from correct facts. Treat outputs as learning references, and use "peer review" between multiple AI agents to challenge assumptions, ask hard questions, and verify reasoning.
 
 ## Typical Trigger
 
@@ -159,7 +163,7 @@ Set the report byline in `config.local.json`:
 }
 ```
 
-`author` is the report byline shown on the PDF cover. Final PDFs append a fixed report-helper signature with the open-source URL and maintainer contact.
+`author` is the report byline shown on the PDF cover.
 
 ## Scripts
 
@@ -180,3 +184,7 @@ Before publishing your fork, scan shared files for absolute local paths, account
 - 公众号：**嘉然学习笔记**
 - 微信：`evadebot`
 - GitHub：https://github.com/Jiaranbb/report-helper
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
