@@ -12,6 +12,14 @@
 
 示例由 Codex GPT-5.5 标准速度生成，耗时约 15 分钟。报告生成质量和所需时间依赖于模型能力、资料可得性、联网检索质量和研究对象复杂度。
 
+运行示例：
+
+![report-helper 运行示例](examples/report-helper-demo.png)
+
+PDF 预览：
+
+![report-helper PDF 预览](examples/report-helper-pdf-preview.png)
+
 示例报告：[`中国算力产业链深度分析报告.pdf`](examples/中国算力产业链深度分析报告.pdf)
 
 ## 如何使用
