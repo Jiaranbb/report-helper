@@ -126,7 +126,7 @@
 ./output/work/{YYYY-MM-DD}-{topic-slug}-report.md
 ```
 
-如果 `config.local.json` 或 `REPORT_HELPER_WORK_DIR` 配置了其他目录，构建稿保存到配置目录。该 Markdown 只作为 PDF / EPUB 渲染输入。
+如果 `config.local.json` 或 `REPORT_HELPER_WORK_DIR` 配置了其他目录，构建稿保存到配置目录。该 Markdown 只作为 PDF 渲染输入。
 
 ## 第五步：交付前审核
 
@@ -141,4 +141,4 @@
 5. 出稿检查：确认 H1、目录、信息来源与分级、引用标注、字数范围和存疑事实处理满足 `report-template.md`、`source-citation-rules.md` 与 `review-checklist.md`。
 6. 回炉：任一项不通过，回到对应写作段落重写，再重新审核。
 
-审核通过后，回到 `SKILL.md` 的生成交付物步骤，读取 `references/delivery.md`，生成 PDF 与 EPUB。
+审核通过后，回到 `SKILL.md` 的生成交付物步骤，读取 `references/delivery.md`，生成 PDF。

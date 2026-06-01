@@ -97,14 +97,11 @@
 
 - [ ] 内部 Markdown 构建稿存到了配置的 `work_dir`（默认 `./output/work/`）
 - [ ] PDF 文件名是 `{研究对象}深度研究报告.pdf`（中文紧连无空格）
-- [ ] EPUB 文件名是 `{研究对象}深度研究报告.epub`（中文紧连无空格）
 - [ ] PDF 封面作者来自 `config.local.json` 的 `author`
-- [ ] EPUB 元数据作者来自 `config.local.json` 的 `author`
-- [ ] PDF 和 EPUB 最末尾包含工具签名：`本报告由 report-helper skill 工具协助生成`、开源地址、作者联系方式
-- [ ] 内部 Markdown 构建稿、PDF 和 EPUB 末尾都**没有**「方法论说明」章节
-- [ ] 内部 Markdown 构建稿、PDF 和 EPUB 末尾都保留「信息来源与分级」章节
+- [ ] PDF 最末尾包含工具签名：`本报告由 report-helper skill 工具协助生成`、开源地址、作者联系方式
+- [ ] 内部 Markdown 构建稿和 PDF 末尾都**没有**「方法论说明」章节
+- [ ] 内部 Markdown 构建稿和 PDF 末尾都保留「信息来源与分级」章节
 - [ ] PDF 目录能被目标读者直接理解，不暴露内部工作分层
-- [ ] 最终回复提示 EPUB 可以导入微信读书打开阅读
 - [ ] 总字数在 10,000-30,000 字范围内
 
 ---

@@ -1,7 +1,7 @@
 ---
 name: report-helper
 description: |
-  当用户说「深度研究 X」「深入研究 X」或要求生成某产品、公司、概念、人物、产业链、政策、趋势的深度研究/发展研究报告时触发，自动进行联网搜索和研究，产出 PDF 文档和 EPUB 电子书，总字数通常 1-3 万字。
+  当用户说「深度研究 X」「深入研究 X」或要求生成某产品、公司、概念、人物、产业链、政策、趋势的深度研究/发展研究报告时触发，自动进行联网搜索和研究，产出排版后的 PDF 文档，总字数通常 1-3 万字。
   作者：嘉然 | GitHub: https://github.com/Jiaranbb/report-helper
 ---
 
@@ -22,7 +22,7 @@ description: |
 研究动机：{为什么研究，最近发生了什么}
 特别关注：{用户希望深入的方向；没有就写「无特别指定」}
 成品体裁：{按用户原话判断，如「正式发展研究报告」「产业研究报告」「叙事型深度研究」}
-交付格式：{PDF / EPUB / PDF+EPUB；未指定时按配置，默认两者都要}
+交付格式：PDF
 报告署名：{读取 config.local.json 的 author；如果为空，必须请用户填写}
 
 执行模式（请选）：
@@ -47,7 +47,7 @@ description: |
 3. **形成判断**：按 `references/workflow.md` 做写作准备审计，确认核心判断、证据链和体裁路由足以进入写作。
 4. **选择体裁并写正文**：读取 `references/report-template.md`、`references/writing-style.md` 和 `references/source-citation-rules.md`。对象是产品、公司、概念或人物时，再读取 `references/adaptations-by-type.md`。
 5. **审核**：读取 `references/review-checklist.md`，命中即改，直到通过。
-6. **生成交付物**：读取 `references/delivery.md`；保存内部 Markdown 构建稿，按需追加 log，生成 PDF 和 EPUB。
+6. **生成交付物**：读取 `references/delivery.md`；保存内部 Markdown 构建稿，按需追加 log，生成 PDF。
 7. **经验沉淀**：遇到 PDF、事实核查、log、未来预测、报告结构或 skill 维护问题时读取 `references/gotchas.md`；本次发现新坑时补充。
 
 ## 配置与隐私
@@ -63,14 +63,12 @@ description: |
 - 正文结构以 `references/report-template.md` 为准，不在 `SKILL.md` 里展开目录。
 - 用户要「发展研究报告 / 产业研究报告 / 政策研究 / 趋势报告 / 2026-2030 报告」时，使用 `report-template.md` 的 **A. 正式研究报告结构**。
 - 用户要产品、公司、人物、概念深度研究且未指定正式体裁时，使用 `report-template.md` 的 **B. 叙事型深度研究结构**。
-- 用户明确指定目录、栏目或交付格式时，用户指定优先；仍需保留必要的信息来源章节。
+- 用户明确指定目录或栏目时，用户指定优先；仍需保留必要的信息来源章节。
 - 正文关键事实判断必须使用 `<sup>a1</sup>` 这类上标标注来源等级和编号；正文前声明编号规则，末尾用「信息来源与分级」按 a/b/c/d 分组列出完整来源，没有 c 和 d 就不写对应小节。
 - 默认输出到 `./output/`；可用 `config.local.json` 或 `REPORT_HELPER_*` 环境变量改路径。
-- 交付格式按用户要求或 `delivery_formats` 配置执行；未指定时默认同时生成 PDF 和 EPUB。
-- PDF 文件名建议为 `{研究对象}深度研究报告.pdf`，EPUB 文件名建议为 `{研究对象}深度研究报告.epub`，封面标题使用正文 H1。
-- 内部 Markdown 构建稿只作为 PDF / EPUB 渲染输入；如果配置了 log 目录，交付时追加记录。
-- PDF / EPUB 的报告署名来自 `author` 配置；不要把工具作者名当成默认报告署名。
-- PDF / EPUB 最末尾必须追加工具签名：`本报告由 report-helper skill 工具协助生成`、`开源地址：https://github.com/Jiaranbb/report-helper`、`交流和建议可联系作者：嘉然 Jiaran（+v: evadebot）`。
-- EPUB 交付时提示用户：EPUB 可导入微信读书打开阅读。
-- 交付前验证：中间资料可追溯；PDF 页数和首页排版正常；EPUB 文件存在且大小不为 0。
-- 常用脚本：`scripts/check_environment.py`、`scripts/append_report_log.py`、`scripts/md_to_pdf.py`、`scripts/render_pdf_with_fallback.py`、`scripts/md_to_epub.py`。具体用法见 `references/delivery.md`。
+- PDF 文件名建议为 `{研究对象}深度研究报告.pdf`，封面标题使用正文 H1。
+- 内部 Markdown 构建稿只作为 PDF 渲染输入；如果配置了 log 目录，交付时追加记录。
+- PDF 的报告署名来自 `author` 配置；不要把工具作者名当成默认报告署名。
+- PDF 最末尾必须追加工具签名：`本报告由 report-helper skill 工具协助生成`、`开源地址：https://github.com/Jiaranbb/report-helper`、`交流和建议可联系作者：嘉然 Jiaran（+v: evadebot）`。
+- 交付前验证：中间资料可追溯；PDF 页数和首页排版正常；PDF 文件存在且大小不为 0。
+- 常用脚本：`scripts/check_environment.py`、`scripts/append_report_log.py`、`scripts/md_to_pdf.py`、`scripts/render_pdf_with_fallback.py`。具体用法见 `references/delivery.md`。

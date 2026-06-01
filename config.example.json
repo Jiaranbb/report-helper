@@ -2,7 +2,6 @@
   "output_dir": "./output",
   "work_dir": "./output/work",
   "intermediate_dir": "./output/intermediate",
-  "delivery_formats": ["pdf", "epub"],
   "log_path": "./output/report-log.md",
   "log_insert_after_heading": "",
   "log_insert_after_marker": "\n---\n\n",
