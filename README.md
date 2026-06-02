@@ -22,6 +22,27 @@ PDF 预览：
 
 示例报告：[`中国算力产业链深度分析报告.pdf`](examples/中国算力产业链深度分析报告.pdf)
 
+## 安装
+
+如果你使用 Codex，可以把下面这句话直接复制给 agent：
+
+```text
+请从 GitHub 安装 report-helper skill：https://github.com/Jiaranbb/report-helper。安装完成后提醒我重启 Codex；重启后帮我运行 python3 scripts/check_environment.py 检查环境。
+```
+
+也可以在 Codex 环境中手动运行：
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo Jiaranbb/report-helper \
+  --path . \
+  --name report-helper
+```
+
+安装完成后需要重启 Codex，让新 skill 生效。
+
+`pip install` 是 Python 包管理器的安装方式，适合安装 Python 库或命令行工具；它不能直接安装 Codex Skill。本 README 里的 `python3 -m pip install markdown weasyprint` 只是安装 PDF 渲染依赖，不是安装 `report-helper` 本体。
+
 ## 如何使用
 
 在支持 Skills 的 AI 工具里，说出类似下面的需求即可：
@@ -107,6 +128,25 @@ python3 -m pip install markdown weasyprint
 
 - PDF report
 - Optional intermediate research notes and internal build logs
+
+## Installation
+
+For Codex, ask the agent:
+
+```text
+Install the report-helper skill from https://github.com/Jiaranbb/report-helper. After installation, remind me to restart Codex; after restart, run python3 scripts/check_environment.py to check the environment.
+```
+
+Or run:
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo Jiaranbb/report-helper \
+  --path . \
+  --name report-helper
+```
+
+`pip install` is for Python packages and dependencies. It does not install the Codex Skill itself.
 
 ## Quality And Review
 
