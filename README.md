@@ -41,8 +41,6 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
 
 安装完成后需要重启 Codex，让新 skill 生效。
 
-`pip install` 是 Python 包管理器的安装方式，适合安装 Python 库或命令行工具；它不能直接安装 Codex Skill。本 README 里的 `python3 -m pip install markdown weasyprint` 只是安装 PDF 渲染依赖，不是安装 `report-helper` 本体。
-
 ## 如何使用
 
 在支持 Skills 的 AI 工具里，说出类似下面的需求即可：
@@ -68,7 +66,7 @@ python3 scripts/check_environment.py
 
 它会检查 Python 版本、`config.local.json`、报告署名、PDF 渲染依赖，以及 Chrome fallback 是否可用。不通过时，按脚本输出补配置或安装依赖。
 
-### 2. 安装依赖
+### 2. 安装 PDF 渲染依赖
 
 如果环境检查提示缺依赖，安装：
 
@@ -76,9 +74,7 @@ python3 scripts/check_environment.py
 python3 -m pip install markdown weasyprint
 ```
 
-这里的 `markdown` 不是交付 HTML 用的，而是 PDF 渲染链路里的内部转换依赖：内部 Markdown 构建稿会先转成临时 HTML，再由 WeasyPrint 或 Chrome 生成 PDF。HTML 不作为公开交付物提供。
-
-如果 WeasyPrint 在你的系统上安装或渲染失败，可以安装 Chrome，并在配置里填写 `chrome_path`，让 PDF 使用 Chrome fallback。
+如果 WeasyPrint 在你的系统上安装或渲染失败，可以安装 Chrome，并在配置里填写 `chrome_path`，使用 Chrome 生成 PDF。
 
 ### 3. 指定存放目录和报告署名
 
@@ -150,7 +146,7 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
   --name report-helper
 ```
 
-`pip install` is for Python packages and dependencies. It does not install the Codex Skill itself.
+Restart Codex after installation to load the new skill.
 
 ## Quality And Review
 
@@ -199,13 +195,13 @@ Run the environment check first:
 python3 scripts/check_environment.py
 ```
 
-Install Python dependencies for PDF rendering:
+Install PDF rendering dependencies:
 
 ```bash
 python3 -m pip install markdown weasyprint
 ```
 
-The `markdown` package is used as an internal Markdown-to-HTML conversion step for PDF rendering; HTML is not a public deliverable. If WeasyPrint is unavailable, install Chrome and set `chrome_path` in `config.local.json` or `REPORT_HELPER_CHROME` for PDF fallback rendering.
+If WeasyPrint is unavailable, install Chrome and set `chrome_path` in `config.local.json` or `REPORT_HELPER_CHROME` for PDF rendering.
 
 Set the report byline in `config.local.json`:
 
