@@ -24,13 +24,13 @@ PDF 预览：
 
 ## 安装
 
-如果你使用 Codex，可以把下面这句话直接复制给 agent：
+你可以在 Codex、Claude Code、OpenClaw 或其他支持 Skill 的 agent 中使用。把下面这句话直接复制给 agent：
 
 ```text
-请从 GitHub 安装 report-helper skill：https://github.com/Jiaranbb/report-helper。安装完成后提醒我重启 Codex；重启后帮我运行 python3 scripts/check_environment.py 检查环境。
+请从 GitHub 安装 report-helper skill：https://github.com/Jiaranbb/report-helper。安装完成后提醒我按当前工具要求重启或刷新 agent；重启后帮我运行 python3 scripts/check_environment.py 检查环境。
 ```
 
-也可以在 Codex 环境中手动运行：
+如果你使用 Codex，也可以手动运行：
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
@@ -39,7 +39,7 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
   --name report-helper
 ```
 
-安装完成后需要重启 Codex，让新 skill 生效。
+安装完成后按当前工具要求重启或刷新 agent，让新 skill 生效。
 
 ## 如何使用
 
@@ -131,13 +131,13 @@ python3 -m pip install markdown weasyprint
 
 ## Installation
 
-For Codex, ask the agent:
+You can use this skill in Codex, Claude Code, OpenClaw, or another agent that supports skills. Ask the agent:
 
 ```text
-Install the report-helper skill from https://github.com/Jiaranbb/report-helper. After installation, remind me to restart Codex; after restart, run python3 scripts/check_environment.py to check the environment.
+Install the report-helper skill from https://github.com/Jiaranbb/report-helper. After installation, remind me to restart or refresh the current agent as required; after restart, run python3 scripts/check_environment.py to check the environment.
 ```
 
-Or run:
+Codex users can also run:
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
@@ -146,7 +146,7 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
   --name report-helper
 ```
 
-Restart Codex after installation to load the new skill.
+Restart or refresh the current agent as required after installation to load the new skill.
 
 ## Quality And Review
 
