@@ -118,6 +118,10 @@ python3 -m pip install markdown weasyprint
 
 本项目采用 [MIT License](LICENSE)。
 
+## 更新记录
+
+版本更新见 [CHANGELOG.md](CHANGELOG.md)。
+
 ---
 
 # report-helper
@@ -236,3 +240,7 @@ Before publishing your fork, scan shared files for absolute local paths, account
 ## License
 
 MIT License. See [LICENSE](LICENSE).
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
