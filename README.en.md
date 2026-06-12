@@ -1,41 +1,23 @@
-# report-helper · Deep Research Report Skill
+# report-helper · One-Sentence Deep Research Reports
 
-![GitHub stars](https://img.shields.io/github/stars/Jiaranbb/report-helper?style=flat-square)
-![License](https://img.shields.io/github/license/Jiaranbb/report-helper?style=flat-square)
-![Skill](https://img.shields.io/badge/Skill-Agent-111111?style=flat-square)
+![AI Skill](https://img.shields.io/badge/AI-Skill-111111?style=flat-square)
 ![Deep Research](https://img.shields.io/badge/Deep-Research-2563EB?style=flat-square)
 ![PDF Report](https://img.shields.io/badge/PDF-Report-D97706?style=flat-square)
-![Source Traceable](https://img.shields.io/badge/Source-Traceable-16A34A?style=flat-square)
 ![Codex](https://img.shields.io/badge/Codex-Supported-222222?style=flat-square)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-Supported-6B5B95?style=flat-square)
+![WeChat](https://img.shields.io/badge/WeChat-evadebot-07C160?style=flat-square&logo=wechat&logoColor=white)
+![Official Account](https://img.shields.io/badge/Official%20Account-Jiaran%20Notes-07C160?style=flat-square&logo=wechat&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-Jiaranbb-181717?style=flat-square&logo=github&logoColor=white)
 
-[中文 README](./README.md) · [Example PDF](./examples/中国算力产业链深度分析报告.pdf) · [Issues](https://github.com/Jiaranbb/report-helper/issues) · [Support](./SUPPORT.md)
+[中文 README](./README.md) · [Quick Start](#quick-start) · [Example PDF](./examples/中国算力产业链深度分析报告.pdf) · [Issues](https://github.com/Jiaranbb/report-helper/issues) · [Support](./SUPPORT.md)
+
+**Author / Contact**: 嘉然 Jiaran · WeChat official account: **嘉然学习笔记** · WeChat: `evadebot`
 
 `report-helper` is an AI Skill for long-form research report writing. Given a research topic, it guides an agent through source collection, source quality review, evidence organization, thesis formation, editorial review, and polished PDF generation.
 
-It is designed for research on products, companies, people, concepts, value chains, policies, and trends. The goal is not to write a short summary, but to run a fuller research-writing workflow with traceable sources and explicit judgments.
+> From one sentence to a shareable PDF report: sourced, reasoned, and formatted.
 
-## Highlights
-
-- 🧭 **One-sentence start**: provide a topic and focus; the agent runs the full report workflow.
-- 🔎 **Research before writing**: the workflow requires current data checks before drafting.
-- 🧾 **Traceable sources**: key factual claims are marked with citation IDs such as `<sup>a1</sup>`.
-- 📊 **Qualitative + quantitative**: company reports must include growth, earnings quality, cash flow, financing, valuation, or comparable-company analysis where data is available.
-- 🎨 **Designed PDF output**: background color, typography, spacing, headings, and footer styling are tuned for sharing.
-
-## Preview
-
-The example below was generated with Codex GPT-5.5 standard speed in about 15 minutes. Quality and runtime depend on model capability, source availability, web-search quality, and topic complexity.
-
-Run example:
-
-![report-helper demo](examples/report-helper-demo.png)
-
-PDF preview:
-
-![report-helper PDF preview](examples/report-helper-pdf-preview.png)
-
-Example report: [`中国算力产业链深度分析报告.pdf`](examples/中国算力产业链深度分析报告.pdf)
+It is designed for research on products, companies, people, concepts, value chains, policies, and trends. The goal is not to write a short summary, but to run a fuller research-writing workflow with traceable sources, explicit judgments, and a formal deliverable.
 
 ## Quick Start
 
@@ -61,6 +43,28 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
 ```
 
 Restart or refresh the current agent as required after installation.
+
+## Highlights
+
+- 🧭 **One-sentence start**: provide a topic and focus; the agent runs the full report workflow.
+- 🔎 **Research before writing**: the workflow requires current data checks before drafting.
+- 🧾 **Traceable sources**: key factual claims are marked with citation IDs such as `<sup>a1</sup>`.
+- 📊 **Qualitative + quantitative**: company reports must include growth, earnings quality, cash flow, financing, valuation, or comparable-company analysis where data is available.
+- 🎨 **Designed PDF output**: background color, typography, spacing, headings, and footer styling are tuned for sharing.
+
+## Preview
+
+The example below was generated with Codex GPT-5.5 standard speed in about 15 minutes. Quality and runtime depend on model capability, source availability, web-search quality, and topic complexity.
+
+Run example:
+
+![report-helper demo](examples/report-helper-demo.png)
+
+PDF preview:
+
+![report-helper PDF preview](examples/report-helper-pdf-preview.png)
+
+Example report: [`中国算力产业链深度分析报告.pdf`](examples/中国算力产业链深度分析报告.pdf)
 
 ## Example Prompts
 

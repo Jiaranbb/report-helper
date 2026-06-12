@@ -1,41 +1,23 @@
-# report-helper · 深度研究报告生成助手
+# report-helper · 一句话生成深度研究报告
 
-![GitHub stars](https://img.shields.io/github/stars/Jiaranbb/report-helper?style=flat-square)
-![License](https://img.shields.io/github/license/Jiaranbb/report-helper?style=flat-square)
-![Skill](https://img.shields.io/badge/Skill-Agent-111111?style=flat-square)
+![AI Skill](https://img.shields.io/badge/AI-Skill-111111?style=flat-square)
 ![Deep Research](https://img.shields.io/badge/Deep-Research-2563EB?style=flat-square)
 ![PDF Report](https://img.shields.io/badge/PDF-Report-D97706?style=flat-square)
-![Source Traceable](https://img.shields.io/badge/Source-Traceable-16A34A?style=flat-square)
 ![Codex](https://img.shields.io/badge/Codex-Supported-222222?style=flat-square)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-Supported-6B5B95?style=flat-square)
+![WeChat](https://img.shields.io/badge/WeChat-evadebot-07C160?style=flat-square&logo=wechat&logoColor=white)
+![公众号](https://img.shields.io/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-%E5%98%89%E7%84%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-07C160?style=flat-square&logo=wechat&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-Jiaranbb-181717?style=flat-square&logo=github&logoColor=white)
 
-[English README](./README.en.md) · [示例报告](./examples/中国算力产业链深度分析报告.pdf) · [问题反馈](https://github.com/Jiaranbb/report-helper/issues) · [联系作者](./SUPPORT.md)
+[English README](./README.en.md) · [30 秒开始](#30-秒开始) · [示例报告](./examples/中国算力产业链深度分析报告.pdf) · [问题反馈](https://github.com/Jiaranbb/report-helper/issues) · [联系作者](./SUPPORT.md)
 
-`report-helper` 是一个面向深度研究报告写作的 AI Skill。给出研究对象后，它会引导 agent 自动完成资料搜集、来源核查、证据整理、判断形成、审稿和 PDF 生成，产出一份有资料来源、有判断、排版美观的正式报告。
+**作者 / 联系方式**：嘉然 Jiaran · 公众号：**嘉然学习笔记** · 微信：`evadebot`
 
-它适合研究产品、公司、人物、概念、产业链、政策或趋势。目标不是生成几段概述，而是尽量跑完一套接近研究写作的流程。
+`report-helper` 是一个面向深度研究报告写作的 AI Skill。给出研究对象后，它会引导 agent 自动完成资料搜集、来源核查、证据整理、判断形成、审稿和 PDF 生成。
 
-## 核心能力
+> 从一句话到一份可分享的正式 PDF：有来源、有判断、有排版。
 
-- 🧭 **一句话启动**：给出研究对象和重点后，自动跑完整报告流程。
-- 🔎 **资料搜集详实**：要求先查找最新数据，再进入写作，避免凭旧信息直接开写。
-- 🧾 **来源可追溯**：正文关键事实使用 `<sup>a1</sup>` 这类编号，文末按来源等级列出出处。
-- 📊 **兼顾定性与定量**：公司研究必须加入成长性、盈利质量、现金流、融资或估值等定量分析。
-- 🎨 **PDF 排版设计过**：背景色、字号、行距、标题层级和页脚样式都做过适配，适合直接分享。
-
-## 效果预览
-
-示例由 Codex GPT-5.5 标准速度生成，耗时约 15 分钟。报告质量和所需时间依赖于模型能力、资料可得性、联网检索质量和研究对象复杂度。
-
-运行示例：
-
-![report-helper 运行示例](examples/report-helper-demo.png)
-
-PDF 预览：
-
-![report-helper PDF 预览](examples/report-helper-pdf-preview.png)
-
-示例报告：[`中国算力产业链深度分析报告.pdf`](examples/中国算力产业链深度分析报告.pdf)
+它适合研究产品、公司、人物、概念、产业链、政策或趋势。目标不是生成几段概述，而是尽量跑完一套接近研究写作的流程，产出一份可核查、可阅读、可交付的长篇报告。
 
 ## 30 秒开始
 
@@ -61,6 +43,28 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
 ```
 
 安装完成后，按当前工具要求重启或刷新 agent，让新 skill 生效。
+
+## 核心能力
+
+- 🧭 **一句话启动**：给出研究对象和重点后，自动跑完整报告流程。
+- 🔎 **资料搜集详实**：要求先查找最新数据，再进入写作，避免凭旧信息直接开写。
+- 🧾 **来源可追溯**：正文关键事实使用 `<sup>a1</sup>` 这类编号，文末按来源等级列出出处。
+- 📊 **兼顾定性与定量**：公司研究必须加入成长性、盈利质量、现金流、融资或估值等定量分析。
+- 🎨 **PDF 排版设计过**：背景色、字号、行距、标题层级和页脚样式都做过适配，适合直接分享。
+
+## 效果预览
+
+示例由 Codex GPT-5.5 标准速度生成，耗时约 15 分钟。报告质量和所需时间依赖于模型能力、资料可得性、联网检索质量和研究对象复杂度。
+
+运行示例：
+
+![report-helper 运行示例](examples/report-helper-demo.png)
+
+PDF 预览：
+
+![report-helper PDF 预览](examples/report-helper-pdf-preview.png)
+
+示例报告：[`中国算力产业链深度分析报告.pdf`](examples/中国算力产业链深度分析报告.pdf)
 
 ## 直接这样用
 
