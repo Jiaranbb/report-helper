@@ -2,6 +2,14 @@
 
 `report-helper` 是一个面向深度研究报告写作的 AI Skill。它适合用来研究一个产品、公司、人物、概念、产业链、政策或趋势，并产出一份有资料来源、有判断、排版美观的正式报告。
 
+## 联系方式
+
+- 作者：**嘉然 Jiaran**
+- 公众号：**嘉然学习笔记**
+- 微信：`evadebot`
+- GitHub：https://github.com/Jiaranbb/report-helper
+- 问题反馈：可以在 GitHub 提交 Issue，或通过微信交流建议
+
 ## 核心特点
 
 1. **一句话启动，自动跑完整报告**：给出研究对象后，自动完成资料搜集、写作、审核和 PDF 生成。
@@ -123,6 +131,14 @@ python3 -m pip install markdown weasyprint
 # report-helper
 
 `report-helper` is a portable research-report skill. It helps an agent run web research, audit source quality, write a long-form report, review it, and render a polished PDF deliverable.
+
+## Contact
+
+- Author: **嘉然 Jiaran**
+- WeChat official account: **嘉然学习笔记**
+- WeChat: `evadebot`
+- GitHub: https://github.com/Jiaranbb/report-helper
+- Feedback: open a GitHub Issue or contact via WeChat
 
 ## What It Produces
 
