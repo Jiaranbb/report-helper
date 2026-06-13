@@ -7,11 +7,12 @@
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-Supported-6B5B95?style=flat-square)
 ![WeChat](https://img.shields.io/badge/WeChat-evadebot-07C160?style=flat-square&logo=wechat&logoColor=white)
 ![公众号](https://img.shields.io/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-%E5%98%89%E7%84%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-07C160?style=flat-square&logo=wechat&logoColor=white)
+[![X](https://img.shields.io/badge/X-%40_jiaran-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/_jiaran)
 ![GitHub](https://img.shields.io/badge/GitHub-Jiaranbb-181717?style=flat-square&logo=github&logoColor=white)
 
 [English README](./README.en.md) · [30 秒开始](#30-秒开始) · [示例报告](./examples/中国算力产业链深度分析报告.pdf) · [问题反馈](https://github.com/Jiaranbb/report-helper/issues) · [联系作者](./SUPPORT.md)
 
-**作者 / 联系方式**：嘉然 Jiaran · 公众号：**嘉然学习笔记** · 微信：`evadebot`
+**作者 / 联系方式**：嘉然 Jiaran · 公众号：**嘉然学习笔记** · 微信：`evadebot` · X：[@_jiaran](https://x.com/_jiaran)
 
 `report-helper` 是一个面向深度研究报告写作的 AI Skill。给出研究对象后，它会引导 agent 自动完成资料搜集、来源核查、证据整理、判断形成、审稿和 PDF 生成。
 
@@ -281,6 +282,7 @@ report-helper/
 
 - 公众号：**嘉然学习笔记**
 - 微信：`evadebot`
+- X：[@_jiaran](https://x.com/_jiaran)
 - GitHub：https://github.com/Jiaranbb/report-helper
 - 支持与反馈：[SUPPORT.md](./SUPPORT.md)
 - 问题与建议：[GitHub Issues](https://github.com/Jiaranbb/report-helper/issues)

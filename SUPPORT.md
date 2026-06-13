@@ -7,6 +7,7 @@
 - 作者：**嘉然 Jiaran**
 - 公众号：**嘉然学习笔记**
 - 微信：`evadebot`
+- X：[@_jiaran](https://x.com/_jiaran)
 - GitHub：https://github.com/Jiaranbb/report-helper
 
 ## 问题反馈
@@ -30,6 +31,7 @@ For help with `report-helper`, use GitHub Issues or contact the author via WeCha
 - Author: **嘉然 Jiaran**
 - WeChat official account: **嘉然学习笔记**
 - WeChat: `evadebot`
+- X: [@_jiaran](https://x.com/_jiaran)
 - GitHub: https://github.com/Jiaranbb/report-helper
 
 Please do not post private paths, account identifiers, tokens, cookies, or API keys in public issues.

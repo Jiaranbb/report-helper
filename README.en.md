@@ -7,11 +7,12 @@
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-Supported-6B5B95?style=flat-square)
 ![WeChat](https://img.shields.io/badge/WeChat-evadebot-07C160?style=flat-square&logo=wechat&logoColor=white)
 ![Official Account](https://img.shields.io/badge/Official%20Account-Jiaran%20Notes-07C160?style=flat-square&logo=wechat&logoColor=white)
+[![X](https://img.shields.io/badge/X-%40_jiaran-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/_jiaran)
 ![GitHub](https://img.shields.io/badge/GitHub-Jiaranbb-181717?style=flat-square&logo=github&logoColor=white)
 
 [中文 README](./README.md) · [Quick Start](#quick-start) · [Example PDF](./examples/中国算力产业链深度分析报告.pdf) · [Issues](https://github.com/Jiaranbb/report-helper/issues) · [Support](./SUPPORT.md)
 
-**Author / Contact**: 嘉然 Jiaran · WeChat official account: **嘉然学习笔记** · WeChat: `evadebot`
+**Author / Contact**: 嘉然 Jiaran · WeChat official account: **嘉然学习笔记** · WeChat: `evadebot` · X: [@_jiaran](https://x.com/_jiaran)
 
 `report-helper` is an AI Skill for long-form research report writing. Given a research topic, it guides an agent through source collection, source quality review, evidence organization, thesis formation, editorial review, and polished PDF generation.
 
@@ -143,6 +144,7 @@ AI-generated reports can still be wrong, including drawing incorrect conclusions
 
 - WeChat official account: **嘉然学习笔记**
 - WeChat: `evadebot`
+- X: [@_jiaran](https://x.com/_jiaran)
 - GitHub: https://github.com/Jiaranbb/report-helper
 - Support: [SUPPORT.md](./SUPPORT.md)
 - Issues: https://github.com/Jiaranbb/report-helper/issues
